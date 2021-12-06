@@ -1,6 +1,6 @@
 
-const Scraper = require('./src/scrapers/scraper');
-const AliExpressScraper = require('./src/scrapers/scraper');
+const scraper = require('./scraper/scraper.js');
+const aliExpressScraper = require('./src/scrapers/scraper');
 
 class ScraperFactory {
     constructor(config) {
@@ -22,5 +22,5 @@ class ScraperFactory {
     }
 
 }
-
-modules.export = ScraperFactory;
+const scraperFactory = new ScraperFactory();
+modules.export = scraperFactory;

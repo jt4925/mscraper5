@@ -5,5 +5,5 @@ class Scraper {
     }
 
 }
-
-module.exports = Scraper; 
+const scraper = new Scraper();
+module.exports = scraper; 

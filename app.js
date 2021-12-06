@@ -3,8 +3,8 @@ const puppeteer = require("puppeteer");
 const http = require("http");
 const axios = require("axios");
 
-const ScraperFactory = require('./src/scrapers/scraper-factory.js');
-const Scraper = require ('./src/scrapers/scraper.js');
+const scraperFactory = require('./src/scrapers/scraper-factory.js');
+// const scraper = require("./src/scrapers/scraper");
 
 const config = {
     source: 'aliexpress',
@@ -23,7 +23,6 @@ class Main {
       this.config = config;
       console.log('config is:\n', config)
 
-      let scraperFactory = new ScraperFactory();
       let scraper = scraperFactory.getScraper(config.source);
 
     }

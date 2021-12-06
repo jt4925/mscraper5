@@ -9,5 +9,5 @@ class AliExpressScraper extends Scraper {
         'running inside Aliexpress Scraper';
     }
 }
-
-module.exports = AliExpressScraper;
+const aliExpressScraper = new AliExpressScraper();
+module.exports = aliExpressScraper;
